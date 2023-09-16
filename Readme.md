@@ -10,26 +10,21 @@ In today's data-driven landscape, selecting the appropriate data storage solutio
 ![Data Lake](https://raw.githubusercontent.com/amar5075kumar/CDC-use-case/main/Images/Data_Lake.png)
 ![Data Lake](https://raw.githubusercontent.com/amar5075kumar/CDC-use-case/main/Images/Data_Lake_Flow.png)
 
-
 2. **Data Lakehouses**: Data Lakehouses strike a balance between the flexibility of Data Lakes and the structured querying of data warehouses. They aim to organize data effectively, ensuring data quality and consistency while facilitating analytics on raw data.
 ![Data Lakehouse](https://raw.githubusercontent.com/amar5075kumar/CDC-use-case/main/Images/Data_Lakehouse.png)
-
-***HUDI File Strorage***: Apache Hudi (Hadoop Upserts Deletes and Incrementals) is an open-source data management framework that simplifies the process of managing large-scale, incremental data. It provides support for both real-time and batch data processing and is particularly valuable for CDC operations.
 ![HUDI File Strorage](https://raw.githubusercontent.com/amar5075kumar/CDC-use-case/main/Images/HUDI_Architecture.png)
 
+**HUDI File Strorage**: Apache Hudi (Hadoop Upserts Deletes and Incrementals) is an open-source data management framework that simplifies the process of managing large-scale, incremental data. It provides support for both real-time and batch data processing and is particularly valuable for CDC operations.
 
-Key features of Apache Hudi:
+**Key features of Apache Hudi**:
 
-ACID Compliance: Hudi ensures Atomicity, Consistency, Isolation, and Durability (ACID) compliance for data operations, critical for maintaining data integrity during CDC.
-Incremental Processing: Hudi allows for efficient incremental data ingestion and processing, making it suitable for real-time data changes.
-Time Travel: The framework offers time-travel capabilities, enabling you to access data at different points in time, essential for historical analysis and auditing.
+- ACID Compliance: Hudi ensures Atomicity, Consistency, Isolation, and Durability (ACID) compliance for data operations, critical for maintaining data integrity during CDC.
+- Incremental Processing: Hudi allows for efficient incremental data ingestion and processing, making it suitable for real-time data changes.
+- Time Travel: The framework offers time-travel capabilities, enabling you to access data at different points in time, essential for historical analysis and auditing.
 
-*** Types of HUDI Tables *** : Copy On Write & Merge On Read
+**Types of HUDI Tables**: Copy On Write & Merge On Read
 ![HUDI File Strorage](https://raw.githubusercontent.com/amar5075kumar/CDC-use-case/main/Images/HUDI_COW_Architecture.png)
 ![HUDI File Strorage](https://raw.githubusercontent.com/amar5075kumar/CDC-use-case/main/Images/HUDI_MOR_Architecture.png)
-
-
-
 
 3. **Delta Lake**: Delta Lake builds upon Data Lakes by introducing essential ACID transactions, enhancing data reliability and security. Features like schema enforcement, time travel, and data versioning further bolster data management.
 ![Delta Lake](https://raw.githubusercontent.com/amar5075kumar/CDC-use-case/main/Images/Delta_Lake_Architecture.png)
